@@ -1,0 +1,20 @@
+{
+  "name": "flow-transpiler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "flow-remove-types": "^1.2.1"
+  },
+  "devDependencies": {
+    "flow-bin": "^0.41.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "flow-remove-types src/ -d lib/",
+    "prepublish": "npm run build",
+    "flow": "flow"
+  },
+  "author": "",
+  "license": "ISC"
+}
